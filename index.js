@@ -1,74 +1,45 @@
-/* 
 
-Case 1 
+/* Case 1 //
 
-const baseValue = ("10");
-const heightValue = ("13");
-
-// calculate the area
+calculate the area of the triangles
 const areaValue = (baseValue * heightValue) / 2;
 
-console.log(
-  `The area of the triangle is ${areaValue}` 
-); 65
-
-
-const baseValue = ("16.5");
-const heightValue = ("20.3")
-
-const areaValue = (baseValue * heightValue) / 2;
-
-console.log(
-    `The area of the triangle is ${areaValue}`
-); 167.475
-
-`Triangle One has an area of 65cm2 and Triangle Two has an area of 167.475cm2. The triangle with the biggest area is Triangle two.`
-
-Case two
-
-
-const baseValue = ("16.5");
-const heightValue = ("20.3")
-
-const areaValue = (baseValue * heightValue) / 2;
-
-console.log(
-    `The area of the triangle is ${areaValue}`
-);
-
-
-const baseValue = ("20.3");
-const heightValue = ("16.5")
-
-const areaValue = (baseValue * heightValue) / 2;
-
-console.log(
-    `The area of the triangle is ${areaValue}`
-);
-
-`Triangle three has an area of 167.475cm2 and Triangle four has an area of 167.475cm2. Both triangles have equally big areas.
-
-
-const baseValue = ("7.8");
-const heightValue = ("5.6")
-
-const areaValue = (baseValue * heightValue) / 2;
-
-console.log(
-    `The area of the triangle is ${areaValue}`
-); 21.84
-
-
-const baseValue = ("9.3");
-const heightValue = ("12.4")
-
-const areaValue = (baseValue * heightValue) / 2;
-
-console.log(
-    `The area of the triangle is ${areaValue}`
-); 57.660000000000004
-
-
-`Triangle five has an area of 21.84cm2 and Triangle six has an area of 57.660000000000004cm2. The triangle with the biggest area is 
-triangle six.
+Then compare the areas using if/else to find out which one has the biggest area
 */
+
+const triangleOne = (10 * 13) / 2;
+const triangleTwo = (16.5 * 20.3) / 2
+
+const isBigger = triangleOne >= triangleTwo;
+
+if (isBigger) {
+    console.log("triangleOne has a bigger/equal area than/as triangleTwo")
+} else {
+    console.log("triangleTwo has a bigger area than triangleOne")
+}
+
+//Case two
+
+const triangleThree = (16.5 * 13) / 2;
+const triangleFour = (20.3 * 16.5) / 2;
+
+const biggerArea = triangleThree >= triangleFour;
+
+if (biggerArea) {
+    console.log("triangleThree has a bigger area than triangleFour")
+} else {
+    console.log("triangleFour has a bigger/as big area as triangleThree")
+};
+
+// Case three 
+
+const triangleFive = (7.8 * 5.6) / 2;
+const triangleSix = (9.3 * 12.4) / 2;
+
+const areaBigger = triangleFive >= triangleSix;
+
+if (areaBigger) {
+    console.log("triangleFive has a bigger/equal area than/as triangleSix")
+} else {
+    console.log("triangleSix has a bigger area than triangleFive")
+};
