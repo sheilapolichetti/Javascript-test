@@ -8,13 +8,15 @@ Then compare the areas using if/else to find out which one has the biggest area
 */
 
 const triangleOne = (10 * 13) / 2;
-const triangleTwo = (16.5 * 20.3) / 2
+const triangleTwo = (16.5 * 20.3) / 2;
+
+const isBigger = triangleOne >= triangleTwo;
 
 if (triangleOne >= triangleTwo) {
     console.log("triangleOne has a bigger/as big area as triangleTwo", {triangleOne, triangleTwo})
 } else {
     console.log("triangleTwo has a bigger area than triangleOne", {triangleTwo, triangleOne})
-}
+};
 
 //Case two
 
@@ -32,8 +34,10 @@ if (triangleThree >=triangleFour) {
 const triangleFive = (7.8 * 5.6) / 2;
 const triangleSix = (9.3 * 12.4) / 2;
 
-if (triangleFive >= triangleSix) {
-    console.log("triangleFive has a bigger/as big area as triangleSix", {triangleFive, triangleSix})
+if (triangleFive > triangleSix) {
+    console.log(`triangleFive has a bigger/as big area as triangleSix ${triangleFive, triangleSix}`);
+} else if (triangleSix > triangleFive) {
+    console.log(`triangleSix has a bigger area than triangleFive ${triangleSix, triangleFive}`);
 } else {
-    console.log("triangleSix has a bigger area than triangleFive", {triangleSix, triangleFive})
-};
+    console.log(`Both triangles have the same areaValue`);
+}
